@@ -17,7 +17,7 @@ function OrphanagesMap() {
                 </header>
                 <footer>
                     <strong>Bagé</strong>
-                    <span>Rio Grander do Sul</span>
+                    <span>Rio Grande do Sul</span>
                 </footer>
             </aside>
             <Map center={[-31.3465304, -54.0956895]} zoom={15} style={{width: '100%', height: '100%'}}>

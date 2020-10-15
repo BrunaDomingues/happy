@@ -25,4 +25,4 @@ function Landing() {
         </div>
     );
 }
-export default Landing;
+export default Landing; asdasd

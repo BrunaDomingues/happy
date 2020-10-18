@@ -1,7 +1,9 @@
 import express from 'express';
 import './database/connection';
+import routes from './routes';
 const app = express();
 app.use(express.json());
+app.use(routes);
 // Rota = Conjunto
 // Recurso = usuário
 // Métodos http = GET, POST, PUT, DELETE
@@ -11,10 +13,5 @@ app.use(express.json());
 // PUT - Editar uma info
 // DELETE - Delete uma info
 // /users/:id : => parametro
-app.get("/users", (request, response) => {
-    //console.log(request.query);
-    //console.log(request.params);
-    //console.log(request.body);
-    return response.json({message: "Hello World"});
-});
+
 app.listen(3333);

@@ -7,6 +7,12 @@ export default {
         const orphanages = await orphanageRepository.find();
         return response.json(orphanages);
     },
+    async show(request: Request, response: Response){
+        const {id} = request.params;
+        const orphanageRepository = getRepository(Orphanage);
+        const orphanage = await orphanageRepository.findOneOrFail(id);
+        return response.json(orphanage);
+    },
     async create(request: Request, response: Response) {
         const {
             name,
